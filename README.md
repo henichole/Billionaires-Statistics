@@ -1,41 +1,39 @@
 # IMDB Database Analysis
 
 ## Project/Goals
-In this Project we will explore the imdb database of all movies, as well as a more detailed top 1000 list to see if we can gain any insights. 
-The two datasets used are here:
-https://www.kaggle.com/datasets/komalkhetlani/imdb-dataset
-https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000
+"In this project, we aim to explore the IMDb database encompassing all movies, alongside a more detailed examination of the top 1000 list, with the goal of deriving valuable insights. The two datasets utilized can be found at the following links:
 
+IMDb Database of All Movies: https://www.kaggle.com/datasets/komalkhetlani/imdb-dataset
+Detailed IMDb Top 1000 Dataset: https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000
 
 ## Layout
-- The data folder contains one folder for the raw data and another for the processed data.  The complete sql database is also there along with an ERD
-- The Notebooks folder is seperated into 3 steps: cleaning, EDA, and modeling.  There is no specific ordering within the folders.
+- The 'data' directory includes two subfolders: one for raw data and another for processed data. 
+- Additionally, it contains the complete SQL database and an Entity-Relationship Diagram (ERD).
+- Within the 'Notebooks' folder, there are three distinct subfolders: cleaning, EDA, and modeling. 
+- The notebooks are organized within these folders without any specific order.
+
 ## Process
-1. The Larger database came in 7 seperate csv files, so the first step was to clean those and load it into a sql database. 
-2. EDA
-3. Linear Regression Models
-4. Created a tableau dashboard to display our findings
+1. The larger database was delivered in seven separate CSV files, necessitating the initial step of cleaning and loading them into an SQL database.
+2. Exploratory Data Analysis (EDA) - Initially, we conducted several preliminary visualizations and subsequently modified each diagram to integrate them into the Tableau dashboard.
+3. Utilized Linear Regression Models
+4. Developed a Tableau dashboard to present and showcase our discoveries.
 
-### Exploring
-While exploring the data some questions we came up with were:
-- Is a movies budget correlated to its rating?
-- Did the popularity of different genres change over time? ex: covid or the 2008 real estate crash
-- How much can actors and directors influence a movies rating?
-- Can we make a model that will predict a movies rating based on other factors?
-
-
-
-
+## Exploring
+1. Is there a correlation between a movie's budget and its rating?
+2. Have the popularity trends of various genres changed over time, particularly during significant events like the COVID-19 pandemic or the 2008 real estate crash?
+3. To what extent can actors and directors influence a movie's rating?
+4. Is it possible to create a predictive model that estimates a movie's rating based on other contributing factors?
 
 ## Results
-- Unfortunately the models did not have a high enough R-Squared to be useful.  One interesting find is the effect each genre will have on the average rating, with the highest (Documentary) giving +0.9 and the lowest (Horror) giving -1
-- 
-
+- Unfortunately, the models failed to achieve a sufficiently high R-Squared to be considered useful. However, one intriguing find was the impact of each genre on the average rating. The highest impact was observed in the Documentary genre, which contributed a +0.9, while the lowest impact was found in the Horror genre, resulting in a -1.
+- Refer to the Tableau dashboards for comprehensive insights on top directors and movies.
+  
 ## Challenges 
-- The database is quite large and caused lots of crashes and slow loading in excel and tableau
-- Many of the movies are in foreign languages, or have multiple titles listed for localized releases
-- TV show episode data is in there too which we dont need
-- Gross revenue for each movie was only available for the top 1000
-
+- The database's substantial size has led to frequent crashes and slow loading times in both Excel and Tableau.
+- Numerous movies in the database are either in foreign languages or have multiple titles listed for localized releases.
+- Additionally, the database contains TV show episode data, which is unnecessary for our purposes.
+- Gross revenue information is available for only the top 1000 movies.
 
 ## Future Goals
+- We encountered challenges aligning the years, removing the duplications with different language titles within the dataset. Moving forward, we aim to improve our process to minimize such errors in future analyses.
+- We are eager to conduct API searches for data up to 2023 to enhance our statistical tests and gain further insights.
