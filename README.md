@@ -1,7 +1,7 @@
 # IMDB Database Analysis
 
 ## Project/Goals
-"In this project, we aim to explore the IMDb database encompassing all movies, alongside a more detailed examination of the top 1000 list, with the goal of deriving valuable insights. The two datasets utilized can be found at the following links:
+In this project, we aim to explore the IMDb database encompassing all movies, alongside a more detailed examination of the top 1000 list, with the goal of deriving valuable insights. The two datasets utilized can be found at the following links:
 
 IMDb Database of All Movies: https://www.kaggle.com/datasets/komalkhetlani/imdb-dataset
 
